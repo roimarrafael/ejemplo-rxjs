@@ -35,7 +35,10 @@ export default function Otro({ texto }: { texto: string }) {
   }, []);
   return (
     <div ref={inputEl} className="ventana">
-      <div className="progresbar" style={{ width: `${width}%` }} />
+      <div className="progresbar" style={{ width: `${width}%` }}>
+        {' '}
+        {width} %{' '}
+      </div>
       <h1>Hello StackBlitz!</h1>
       {texto}
       <p>Start editing to see some magic happen :)</p>

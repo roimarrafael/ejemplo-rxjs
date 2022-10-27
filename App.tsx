@@ -20,8 +20,12 @@ export default function App() {
   }, []);
   return (
     <div>
-      <div className="progresbar" style={{ width: `${width}%` }} />
+      <div className="progresbar" style={{ width: `${width}%` }}>
+        {width}%
+      </div>
       <h1>Hello StackBlitz!</h1>
+      <div>
+      </div>
       {show && <Otro texto={texto} />}
       <button onClick={() => setShow((e) => !e)}>ver ?</button>
       <br />

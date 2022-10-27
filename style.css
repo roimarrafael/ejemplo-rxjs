@@ -10,6 +10,10 @@ p {
   height: 10px;
   width: 0%;
   background: fuchsia;
+  min-width: 20%;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
 }
 
 .ventana {
@@ -24,4 +28,5 @@ p {
 .ventana .progresbar {
   top: initial;
   background: forestgreen;
+  padding: 20px;
 }
