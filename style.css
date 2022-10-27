@@ -5,7 +5,7 @@ p {
 
 .progresbar {
   position: fixed;
-  top: 0px;
+  top: 1px;
   left: 0px;
   height: 10px;
   width: 0%;
@@ -19,4 +19,9 @@ p {
   overflow: scroll;
   border: solid 1px rosybrown;
   margin-bottom: 20px;
+}
+
+.ventana .progresbar {
+  top: initial;
+  background: forestgreen;
 }

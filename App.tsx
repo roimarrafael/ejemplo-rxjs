@@ -11,6 +11,7 @@ for (let i = 0; i <= 10000; i++) {
 
 export default function App() {
   const [width, setWidth] = React.useState(0);
+  const [show, setShow] = React.useState(false);
   React.useEffect(() => {
     obs$.subscribe((event) => {
       console.log(event);
@@ -21,7 +22,9 @@ export default function App() {
     <div>
       <div className="progresbar" style={{ width: `${width}%` }} />
       <h1>Hello StackBlitz!</h1>
-      <Otro texto={texto} />
+      {show && <Otro texto={texto} />}
+      <button onClick={() => setShow((e) => !e)}>ver ?</button>
+      <br />
       {texto}
       <p>Start editing to see some magic happen :)</p>
     </div>
