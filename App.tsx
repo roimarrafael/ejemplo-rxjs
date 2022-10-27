@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { obs$ } from './observables';
+import Otro from './Otro';
 import './style.css';
 
 let texto = '';
@@ -20,6 +21,7 @@ export default function App() {
     <div>
       <div className="progresbar" style={{ width: `${width}%` }} />
       <h1>Hello StackBlitz!</h1>
+      <Otro texto={texto} />
       {texto}
       <p>Start editing to see some magic happen :)</p>
     </div>

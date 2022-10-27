@@ -11,3 +11,12 @@ p {
   width: 0%;
   background: fuchsia;
 }
+
+.ventana {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  overflow: scroll;
+  border: solid 1px rosybrown;
+  margin-bottom: 20px;
+}
