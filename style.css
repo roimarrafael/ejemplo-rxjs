@@ -1,0 +1,13 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.progresbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 10px;
+  width: 0%;
+  background: fuchsia;
+}
