@@ -19,14 +19,15 @@ p {
 .ventana {
   width: 350px;
   height: 350px;
-  position: relative;
   overflow: scroll;
+  position: relative;
   border: solid 1px rosybrown;
   margin-bottom: 20px;
 }
 
 .ventana .progresbar {
-  top: initial;
   background: forestgreen;
-  padding: 20px;
+  padding: 20px 0px;
+  position: absolute;
+  left: 0px;
 }

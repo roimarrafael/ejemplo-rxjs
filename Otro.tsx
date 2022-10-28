@@ -15,11 +15,16 @@ export default function Otro({ texto }: { texto: string }) {
       map((event) => {
         return event.target;
       }),
+      tap((e: any) => {
+        console.log('targuet', { e });
+        console.log('total', e.offsetTop + e.scrollTop);
+      }),
       map((docu: any) => ({
         scrollTop: docu.scrollTop,
         scrollHeight: docu.scrollHeight,
         clientHeight: docu.clientHeight,
       })),
+      tap((e) => console.log('info', e)),
       map(({ scrollTop, scrollHeight, clientHeight }) => {
         return (scrollTop / (scrollHeight - clientHeight)) * 100;
       }),
@@ -35,7 +40,10 @@ export default function Otro({ texto }: { texto: string }) {
   }, []);
   return (
     <div ref={inputEl} className="ventana">
-      <div className="progresbar" style={{ width: `${width}%` }}>
+      <div
+        className="progresbar"
+        style={{ width: `${width}%`, top: inputEl.current?.scrollTop }}
+      >
         {' '}
         {width} %{' '}
       </div>

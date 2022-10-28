@@ -24,10 +24,9 @@ export default function App() {
         {width}%
       </div>
       <h1>Hello StackBlitz!</h1>
-      <div>
-      </div>
-      {show && <Otro texto={texto} />}
       <button onClick={() => setShow((e) => !e)}>ver ?</button>
+      {show && <Otro texto={texto} />}
+
       <br />
       {texto}
       <p>Start editing to see some magic happen :)</p>
